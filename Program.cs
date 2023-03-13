@@ -7,8 +7,10 @@ namespace UnitTests
         static void Main(string[] args)
         {
             StringCalculator calc = new StringCalculator();
+            
             Console.WriteLine("Enter your string: ");
             string str = Console.ReadLine();
+            
             try
             {
                 Console.WriteLine("Result: " + calc.Add(str));
@@ -17,7 +19,7 @@ namespace UnitTests
             {
                 Console.WriteLine(e.Message);
             }
-            
+
         }
     }
 }

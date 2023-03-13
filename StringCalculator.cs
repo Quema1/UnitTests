@@ -22,7 +22,7 @@ namespace UnitTests
                 result += Convert.ToInt32(new string(numbers.FirstOrDefault(), 1));
                 return result;
             }
-            
+
             if (numbers.StartsWith("//"))
             {
                 Array.Resize(ref separators, separators.Length + 1);
@@ -31,7 +31,6 @@ namespace UnitTests
 
             }
 
-           
             var array = numbers.Split(separators, StringSplitOptions.None);
             bool isNegative = false;
             string warning = "negatives not allowed: ";
@@ -45,7 +44,7 @@ namespace UnitTests
                     {
                         warning += num;
                         warning += " ";
-                        isNegative = true;                      
+                        isNegative = true;
                     }
                     result += num;
                 }
