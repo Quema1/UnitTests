@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Linq;
 
-namespace UnitTests
+namespace StringCalculator
 {
-    public class StringCalculator
+    public class StringCalculatorWorker
     {
         public int Add(string numbers)
         {
-            var separators = new string[] { ",", "\\n" };
+            var separators = new string[] { ",","\\n","\n" };
             int result = 0;
 
             if (numbers.Length == 0)

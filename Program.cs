@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace UnitTests
+namespace StringCalculator
 {
     class Program
     {
         static void Main(string[] args)
         {
-            StringCalculator calc = new StringCalculator();
+            StringCalculatorWorker calc = new StringCalculatorWorker();
             
             Console.WriteLine("Enter your string: ");
             string str = Console.ReadLine();
